@@ -18,12 +18,12 @@ These models are trained using extra data from [Hariharan et al.](http://www.cs.
 FCN-32s is fine-tuned from the [ILSVRC-trained VGG-16 model](https://github.com/BVLC/caffe/wiki/Model-Zoo#models-used-by-the-vgg-team-in-ilsvrc-2014), and the finer striders are then fine-tuned in turn.
 The "at-once" FCN-8s is fine-tuned from VGG-16 all-at-once by scaling the skip connections to better condition optimization.
 
-* [FCN-32s PASCAL](tree/master/fcn32s): single stream, 32 pixel prediction stride version, scoring 63.6 mIU on seg11valid
-* [FCN-16s PASCAL](tree/master/fcn16s): two stream, 16 pixel prediction stride version, scoring 65.0 mIU on seg11valid
-* [FCN-8s PASCAL](tree/master/fcn8s): three stream, 8 pixel prediction stride version, scoring 65.5 mIU on seg11valid and 67.2 mIU on seg12test
-* [FCN-8s PASCAL at-once](tree/master/fcn8s): all-at-once edition of the three stream, 8 pixel prediction stride version, scoring 65.4 mIU on seg11valid
+* [FCN-32s PASCAL](voc-fcn32s): single stream, 32 pixel prediction stride net, scoring 63.6 mIU on seg11valid
+* [FCN-16s PASCAL](voc-fcn16s): two stream, 16 pixel prediction stride net, scoring 65.0 mIU on seg11valid
+* [FCN-8s PASCAL](voc-fcn8s): three stream, 8 pixel prediction stride net, scoring 65.5 mIU on seg11valid and 67.2 mIU on seg12test
+* [FCN-8s PASCAL at-once](voc-fcn8s-atonce): all-at-once, three stream, 8 pixel prediction stride net, scoring 65.4 mIU on seg11valid
 
-[FCN-AlexNet PASCAL](tree/master/voc-fcn-alexnet): AlexNet (CaffeNet) architecture, single stream, 32 pixel prediction stride net, scoring 48.0 mIU on seg11valid.
+[FCN-AlexNet PASCAL](voc-fcn-alexnet): AlexNet (CaffeNet) architecture, single stream, 32 pixel prediction stride net, scoring 48.0 mIU on seg11valid.
 Unlike the FCN-32/16/8s models, this network is trained with gradient accumulation, normalized loss, and standard momentum.
 (Note: when both FCN-32s/FCN-VGG16 and FCN-AlexNet are trained in this same way FCN-VGG16 is far better; see Table 1 of the paper.)
 
