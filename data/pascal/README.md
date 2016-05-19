@@ -1,6 +1,7 @@
 # PASCAL VOC and SBD
 
 PASCAL VOC is a standard recognition dataset and benchmark with detection and semantic segmentation challenges.
+The semantic segmentation challenge annotates 20 object classes and background.
 The Semantic Boundary Dataset (SBD) is a further annotation of the PASCAL VOC data that provides more semantic segmentation and instance segmentation masks.
 
 PASCAL VOC has a private test set and [leaderboard for semantic segmentation](http://host.robots.ox.ac.uk:8080/leaderboard/displaylb.php?challengeid=11&compid=6).
