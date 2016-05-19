@@ -23,12 +23,13 @@ The "at-once" FCN-8s is fine-tuned from VGG-16 all-at-once by scaling the skip c
 * [FCN-8s PASCAL](tree/master/fcn8s): three stream, 8 pixel prediction stride version, scoring 65.5 mIU on seg11valid and 67.2 mIU on seg12test
 * [FCN-8s PASCAL at-once](tree/master/fcn8s): all-at-once edition of the three stream, 8 pixel prediction stride version, scoring 65.4 mIU on seg11valid
 
+[FCN-AlexNet PASCAL](tree/master/voc-fcn-alexnet): AlexNet (CaffeNet) architecture, single stream, 32 pixel prediction stride net, scoring 48.0 mIU on seg11valid.
+Unlike the FCN-32/16/8s models, this network is trained with gradient accumulation, normalized loss, and standard momentum.
+(Note: when both FCN-32s/FCN-VGG16 and FCN-AlexNet are trained in this same way FCN-VGG16 is far better; see Table 1 of the paper.)
+
 To reproduce the validation scores, use the [seg11valid](https://github.com/shelhamer/fcn.berkeleyvision.org/blob/master/data/pascal/seg11valid.txt) split defined by the paper in footnote 7. Since SBD train and PASCAL VOC 2011 segval intersect, we only evaluate on the non-intersecting set for validation purposes.
 
 **The following models have not yet been ported to master and trained with the latest settings. Check back soon.**
-
-PASCAL VOC:
-* [FCN-AlexNet PASCAL](https://gist.github.com/shelhamer/3f2c75f3c8c71357f24c#file-readme.md): AlexNet (CaffeNet) single stream, 32 pixel prediction stride version
 
 SIFT Flow model (also fine-tuned from VGG-16):
 * [FCN-16s SIFT Flow](https://gist.github.com/longjon/f35e3a101e1478f721f5#file-readme-md): two stream, 16 pixel prediction stride version
