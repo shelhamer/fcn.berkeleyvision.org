@@ -4,7 +4,7 @@ layer {
   top: "data"
   input_param {
     # These dimensions are purely for sake of example;
-    # see eval.py for how to reshape the net to the given input size.
+    # see infer.py for how to reshape the net to the given input size.
     shape { dim: 1 dim: 3 dim: 500 dim: 500 }
   }
 }
