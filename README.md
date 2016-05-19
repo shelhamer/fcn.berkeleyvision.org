@@ -13,15 +13,17 @@ Please ask Caffe and FCN usage questions on the [caffe-users mailing list](https
 These models are compatible with `BVLC/caffe:master` @ 8c66fa5 with the merge of PRs BVLC/caffe#3613 and BVLC/caffe#3570.
 The code and models here are available under the same license as Caffe (BSD-2) and the Caffe-bundled models (that is, unrestricted use; see the [BVLC model license](http://caffe.berkeleyvision.org/model_zoo.html#bvlc-model-license)).
 
-PASCAL VOC models: trained online with high momentum for a ~5 point boost in mean intersection-over-union over the original models.
+**PASCAL VOC models**: trained online with high momentum for a ~5 point boost in mean intersection-over-union over the original models.
 These models are trained using extra data from [Hariharan et al.](http://www.cs.berkeley.edu/~bharath2/codes/SBD/download.html), but excluding SBD val.
 FCN-32s is fine-tuned from the [ILSVRC-trained VGG-16 model](https://github.com/BVLC/caffe/wiki/Model-Zoo#models-used-by-the-vgg-team-in-ilsvrc-2014), and the finer striders are then fine-tuned in turn.
+The "at-once" FCN-8s is fine-tuned from VGG-16 all-at-once by scaling the skip connections to better condition optimization.
 
 * [FCN-32s PASCAL](tree/master/fcn32s): single stream, 32 pixel prediction stride version, scoring 63.6 mIU on seg11valid
 * [FCN-16s PASCAL](tree/master/fcn16s): two stream, 16 pixel prediction stride version, scoring 65.0 mIU on seg11valid
 * [FCN-8s PASCAL](tree/master/fcn8s): three stream, 8 pixel prediction stride version, scoring 65.5 mIU on seg11valid and 67.2 mIU on seg12test
+* [FCN-8s PASCAL at-once](tree/master/fcn8s): all-at-once edition of the three stream, 8 pixel prediction stride version, scoring 65.4 mIU on seg11valid
 
-To reproduce the validation scores, use the [seg11valid](https://gist.github.com/shelhamer/edb330760338892d511e) split defined by the paper in footnote 7. Since SBD train and PASCAL VOC 11 segval intersect, we only evaluate on the non-intersecting set for validation purposes.
+To reproduce the validation scores, use the [seg11valid](https://github.com/shelhamer/fcn.berkeleyvision.org/blob/master/data/pascal/seg11valid.txt) split defined by the paper in footnote 7. Since SBD train and PASCAL VOC 2011 segval intersect, we only evaluate on the non-intersecting set for validation purposes.
 
 **The following models have not yet been ported to master and trained with the latest settings. Check back soon.**
 
