@@ -1,0 +1,42 @@
+wall
+floor
+cabinet
+bed
+chair
+sofa
+table
+door
+window
+bookshelf
+picture
+counter
+blinds
+desk
+shelves
+curtain
+dresser
+pillow
+mirror
+floor mat
+clothes
+ceiling
+books
+refridgerator
+television
+paper
+towel
+shower curtain
+box
+whiteboard
+person
+night stand
+toilet
+sink
+lamp
+bathtub
+bag
+otherstructure
+otherfurniture
+otherprop
+
+and 0 is void (and converted to 255 by the NYUDSegDataLayer)
