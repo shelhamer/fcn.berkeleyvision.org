@@ -2,20 +2,21 @@ from __future__ import division
 import caffe
 import numpy as np
 
-def transplant(new_net, net):
+def transplant(new_net, net, suffix=''):
     for p in net.params:
-        if p not in new_net.params:
+        p_new = p + suffix
+        if p_new not in new_net.params:
             print 'dropping', p
             continue
         for i in range(len(net.params[p])):
-            if i > (len(new_net.params[p]) - 1):
+            if i > (len(new_net.params[p_new]) - 1):
                 print 'dropping', p, i
                 break
-            if net.params[p][i].data.shape != new_net.params[p][i].data.shape:
-                print 'coercing', p, i, 'from', net.params[p][i].data.shape, 'to', new_net.params[p][i].data.shape
+            if net.params[p][i].data.shape != new_net.params[p_new][i].data.shape:
+                print 'coercing', p, i, 'from', net.params[p][i].data.shape, 'to', new_net.params[p_new][i].data.shape
             else:
-                print 'copying', p, i
-            new_net.params[p][i].data.flat = net.params[p][i].data.flat
+                print 'copying', p, ' -> ', p_new, i
+            new_net.params[p_new][i].data.flat = net.params[p][i].data.flat
 
 def expand_score(new_net, new_layer, net, layer):
     old_cl = net.params[layer][0].num
