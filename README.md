@@ -15,7 +15,7 @@ The code and models here are available under the same license as Caffe (BSD-2) a
 
 **PASCAL VOC models**: trained online with high momentum for a ~5 point boost in mean intersection-over-union over the original models.
 These models are trained using extra data from [Hariharan et al.](http://www.cs.berkeley.edu/~bharath2/codes/SBD/download.html), but excluding SBD val.
-FCN-32s is fine-tuned from the [ILSVRC-trained VGG-16 model](https://github.com/BVLC/caffe/wiki/Model-Zoo#models-used-by-the-vgg-team-in-ilsvrc-2014), and the finer striders are then fine-tuned in turn.
+FCN-32s is fine-tuned from the [ILSVRC-trained VGG-16 model](https://github.com/BVLC/caffe/wiki/Model-Zoo#models-used-by-the-vgg-team-in-ilsvrc-2014), and the finer strides are then fine-tuned in turn.
 The "at-once" FCN-8s is fine-tuned from VGG-16 all-at-once by scaling the skip connections to better condition optimization.
 
 * [FCN-32s PASCAL](voc-fcn32s): single stream, 32 pixel prediction stride net, scoring 63.6 mIU on seg11valid
