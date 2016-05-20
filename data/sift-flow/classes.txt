@@ -1,0 +1,47 @@
+Semantic and geometric segmentation classes for scenes.
+
+Semantic: 0 is void and 1–33 are classes.
+
+01 awning
+02 balcony
+03 bird
+04 boat
+05 bridge
+06 building
+07 bus
+08 car
+09 cow
+10 crosswalk
+11 desert
+12 door
+13 fence
+14 field
+15 grass
+16 moon
+17 mountain
+18 person
+19 plant
+20 pole
+21 river
+22 road
+23 rock
+24 sand
+25 sea
+26 sidewalk
+27 sign
+28 sky
+29 staircase
+30 streetlight
+31 sun
+32 tree
+33 window
+
+Geometric: -1 is void and 1–3 are classes.
+
+01 sky
+02 horizontal
+03 vertical
+
+N.B. Three classes (cow, desert, and moon) are absent from the test set, so
+they are excluded from evaluation. The highway_bost181 and street_urb506 images
+are missing annotations so these are likewise excluded from evaluation.
