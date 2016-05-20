@@ -7,7 +7,7 @@ import os
 import setproctitle
 setproctitle.setproctitle(os.path.basename(os.getcwd()))
 
-weights = '../fcn32s-heavy-88k.caffemodel'
+weights = '../voc-fcn32s/voc-fcn32s.caffemodel'
 
 # init
 caffe.set_device(int(sys.argv[1]))
