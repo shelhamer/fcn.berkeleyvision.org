@@ -48,9 +48,8 @@ These models demonstrate FCNs for multi-task output.
 This will be corrected soon.
 The evaluation of the geometric classes is fine.
 
-**The following models have not yet been ported to master and trained with the latest settings. Check back soon.**
+**PASCAL-Context models**: trained online with high momentum on an object and scene labeling of PASCAL VOC.
 
-PASCAL-Context models including architecture definition, solver configuration, and bare-bones solving script (fine-tuned from the ILSVRC-trained VGG-16 model):
-* [FCN-32s PASCAL-Context](https://gist.github.com/shelhamer/80667189b218ad570e82#file-readme-md): single stream, 32 pixel prediction stride version
-* [FCN-16s PASCAL-Context](https://gist.github.com/shelhamer/08652f2ba191f64e619a#file-readme-md): two stream, 16 pixel prediction stride version
-* [FCN-8s PASCAL-Context](https://gist.github.com/shelhamer/91eece041c19ff8968ee#file-readme-md): three stream, 8 pixel prediction stride version
+* [FCN-32s PASCAL-Context](pascalcontext-fcn32s): single stream, 32 pixel prediction stride net
+* [FCN-16s PASCAL-Context](pascalcontext-fcn16s): two stream, 16 pixel prediction stride net
+* [FCN-8s PASCAL-Context](pascalcontext-fcn8s): three stream, 8 pixel prediction stride net
