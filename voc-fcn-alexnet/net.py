@@ -52,7 +52,7 @@ def fcn(split):
         param=[dict(lr_mult=0)])
     n.score = crop(n.upscore, n.data)
     n.loss = L.SoftmaxWithLoss(n.score, n.label,
-            loss_param=dict(normalize=False, ignore_label=255))
+            loss_param=dict(normalize=True, ignore_label=255))
 
     return n.to_proto()
 
