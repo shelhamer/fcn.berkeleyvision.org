@@ -1,11 +1,14 @@
-These are models and scripts for the [paper](http://www.cs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf):
+This is the reference implementation of the models and code for the fully convolutional networks (FCNs) in the [PAMI FCN](https://arxiv.org/abs/1605.06211) and [CVPR FCN](http://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Long_Fully_Convolutional_Networks_2015_CVPR_paper.html) papers:
+
+    Fully Convolutional Models for Semantic Segmentation
+    Evan Shelhamer*, Jonathan Long*, Trevor Darrell
+    PAMI (accepted May, 2016)
+    arXiv:1605.06211
 
     Fully Convolutional Models for Semantic Segmentation
     Jonathan Long*, Evan Shelhamer*, Trevor Darrell
     CVPR 2015
     arXiv:1411.4038
-
-and its journal edition in PAMI (to appear).
 
 **Note that this is a work in progress and the final, reference version is coming soon.**
 Please ask Caffe and FCN usage questions on the [caffe-users mailing list](https://groups.google.com/forum/#!forum/caffe-users).
