@@ -7,7 +7,8 @@ While there are many labels, we follow the 40 class task defined by
 Saurabh Gupta, Pablo Arbelaez, and Jitendra Malik.
 CVPR 2013
 
-at http://www.cs.berkeley.edu/~sgupta/pdf/GuptaArbelaezMalikCVPR13.pdf.
+at http://www.cs.berkeley.edu/~sgupta/pdf/GuptaArbelaezMalikCVPR13.pdf .
+To reproduce the results of our paper, you must make use of the data from Gupta et al. at http://people.eecs.berkeley.edu/~sgupta/cvpr13/data.tgz .
 
 Refer to `classes.txt` for the listing of classes in model output order.
 Refer to `../nyud_layers.py` for the Python data layer for this dataset.
