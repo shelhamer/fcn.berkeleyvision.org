@@ -4,7 +4,7 @@ This is the reference implementation of the models and code for the fully convol
 
     Fully Convolutional Models for Semantic Segmentation
     Evan Shelhamer*, Jonathan Long*, Trevor Darrell
-    PAMI (accepted May, 2016)
+    PAMI 2016
     arXiv:1605.06211
 
     Fully Convolutional Models for Semantic Segmentation
