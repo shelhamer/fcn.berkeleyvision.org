@@ -59,3 +59,16 @@ The evaluation of the geometric classes is fine.
 * [FCN-32s PASCAL-Context](pascalcontext-fcn32s): single stream, 32 pixel prediction stride net
 * [FCN-16s PASCAL-Context](pascalcontext-fcn16s): two stream, 16 pixel prediction stride net
 * [FCN-8s PASCAL-Context](pascalcontext-fcn8s): three stream, 8 pixel prediction stride net
+
+## Freqeuntly Asked Questions
+
+**Is learning the interpolation necessary?** In our original experiments the interpolation layers were initialized to bilinear kernels and then learned.
+In follow-up experiments, and this reference implementation, the bilinear kernels are fixed.
+There is no significant difference in accuracy in our experiments, and fixing these parameters gives a slight speed-up.
+Note that in our networks there is only one interpolation kernel per output class, and results may differ for higher-dimensional and non-linear interpolation, for which learning may help further.
+
+**Why pad the input?**: The 100 pixel input padding guarantees that the network output can be aligned to the input for any input size in the given datasets, for instance PASCAL VOC.
+The alignment is handled automatically by net specification and the crop layer.
+It is possible, though less convenient, to calculate the exact offsets necessary and do away with this padding.
+
+**What about FCN-GoogLeNet?**: a reference FCN-GoogLeNet for PASCAL VOC is coming soon.
