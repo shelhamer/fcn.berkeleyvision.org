@@ -69,6 +69,6 @@ Note that in our networks there is only one interpolation kernel per output clas
 
 **Why pad the input?**: The 100 pixel input padding guarantees that the network output can be aligned to the input for any input size in the given datasets, for instance PASCAL VOC.
 The alignment is handled automatically by net specification and the crop layer.
-It is possible, though less convenient, to calculate the exact offsets necessary and do away with this padding.
+It is possible, though less convenient, to calculate the exact offsets necessary and do away with this amount of padding.
 
 **What about FCN-GoogLeNet?**: a reference FCN-GoogLeNet for PASCAL VOC is coming soon.
