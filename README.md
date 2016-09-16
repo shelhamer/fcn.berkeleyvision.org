@@ -71,4 +71,8 @@ Note that in our networks there is only one interpolation kernel per output clas
 The alignment is handled automatically by net specification and the crop layer.
 It is possible, though less convenient, to calculate the exact offsets necessary and do away with this amount of padding.
 
+**Why are all the outputs/gradients/parameters zero?**: This is almost universally due to not initializing the weights as needed.
+To reproduce our FCN training, or train your own FCNs, it is crucial to transplant the weights from the corresponding ILSVRC net such as VGG16.
+The included `surgery.transplant()` method can help with this.
+
 **What about FCN-GoogLeNet?**: a reference FCN-GoogLeNet for PASCAL VOC is coming soon.
