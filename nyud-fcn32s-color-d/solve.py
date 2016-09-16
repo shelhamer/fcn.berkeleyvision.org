@@ -7,8 +7,8 @@ import os
 import setproctitle
 setproctitle.setproctitle(os.path.basename(os.getcwd()))
 
-weights = '../vgg16fc.caffemodel'
-base_net = caffe.Net('../vgg16fc.prototxt', '../vgg16fc.caffemodel',
+weights = '../ilsvrc-nets/vgg16-fcn.caffemodel'
+base_net = caffe.Net('../ilsvrc-nets/vgg16fcn.prototxt', '../vgg16fc.caffemodel',
         caffe.TEST)
 
 # init

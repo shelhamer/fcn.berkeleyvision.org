@@ -7,7 +7,7 @@ import os
 import setproctitle
 setproctitle.setproctitle(os.path.basename(os.getcwd()))
 
-weights = '../alexnetfc.caffemodel'
+weights = '../ilsvrc-nets/alexnet-fcn.caffemodel'
 
 # init
 caffe.set_device(int(sys.argv[1]))

@@ -7,7 +7,7 @@ import os
 import setproctitle
 setproctitle.setproctitle(os.path.basename(os.getcwd()))
 
-weights = '../vgg16fc.caffemodel'
+weights = '../ilsvrc-nets/vgg16-fcn.caffemodel'
 
 # init
 caffe.set_device(int(sys.argv[1]))
