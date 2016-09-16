@@ -60,7 +60,7 @@ The evaluation of the geometric classes is fine.
 * [FCN-16s PASCAL-Context](pascalcontext-fcn16s): two stream, 16 pixel prediction stride net
 * [FCN-8s PASCAL-Context](pascalcontext-fcn8s): three stream, 8 pixel prediction stride net
 
-## Freqeuntly Asked Questions
+## Frequently Asked Questions
 
 **Is learning the interpolation necessary?** In our original experiments the interpolation layers were initialized to bilinear kernels and then learned.
 In follow-up experiments, and this reference implementation, the bilinear kernels are fixed.
