@@ -7,7 +7,7 @@ layer {
   python_param {
     module: "siftflow_layers"
     layer: "SIFTFlowSegDataLayer"
-    param_str: "{\'siftflow_dir\': \'../../data/sift-flow\', \'seed\': 1337, \'split\': \'trainval\'}"
+    param_str: "{\'siftflow_dir\': \'../data/sift-flow\', \'seed\': 1337, \'split\': \'trainval\'}"
   }
 }
 layer {
