@@ -6,7 +6,7 @@ layer {
   python_param {
     module: "nyud_layers"
     layer: "NYUDSegDataLayer"
-    param_str: "{\'tops\': [\'hha\', \'label\'], \'seed\': 1337, \'nyud_dir\': \'../../data/nyud\', \'split\': \'trainval\'}"
+    param_str: "{\'tops\': [\'hha\', \'label\'], \'seed\': 1337, \'nyud_dir\': \'../data/nyud\', \'split\': \'trainval\'}"
   }
 }
 layer {
