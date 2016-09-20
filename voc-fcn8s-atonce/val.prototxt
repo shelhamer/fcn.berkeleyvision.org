@@ -6,7 +6,7 @@ layer {
   python_param {
     module: "voc_layers"
     layer: "VOCSegDataLayer"
-    param_str: "{\'voc_dir\': \'../../data/pascal/VOC2011\', \'seed\': 1337, \'split\': \'seg11valid\', \'mean\': (104.00699, 116.66877, 122.67892)}"
+    param_str: "{\'voc_dir\': \'../data/pascal/VOC2011\', \'seed\': 1337, \'split\': \'seg11valid\', \'mean\': (104.00699, 116.66877, 122.67892)}"
   }
 }
 layer {

@@ -6,7 +6,7 @@ layer {
   python_param {
     module: "voc_layers"
     layer: "SBDDSegDataLayer"
-    param_str: "{\'sbdd_dir\': \'../../data/sbdd/dataset\', \'seed\': 1337, \'split\': \'train\', \'mean\': (104.00699, 116.66877, 122.67892)}"
+    param_str: "{\'sbdd_dir\': \'../data/sbdd/dataset\', \'seed\': 1337, \'split\': \'train\', \'mean\': (104.00699, 116.66877, 122.67892)}"
   }
 }
 layer {
@@ -429,6 +429,15 @@ layer {
   top: "fc6"
 }
 layer {
+  name: "drop6"
+  type: "Dropout"
+  bottom: "fc6"
+  top: "fc6"
+  dropout_param {
+    dropout_ratio: 0.5
+  }
+}
+layer {
   name: "fc7"
   type: "Convolution"
   bottom: "fc6"
@@ -453,6 +462,15 @@ layer {
   type: "ReLU"
   bottom: "fc7"
   top: "fc7"
+}
+layer {
+  name: "drop7"
+  type: "Dropout"
+  bottom: "fc7"
+  top: "fc7"
+  dropout_param {
+    dropout_ratio: 0.5
+  }
 }
 layer {
   name: "score_fr"
