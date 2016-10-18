@@ -19,4 +19,4 @@ Refer to `../voc_layers.py` for the Python data layer for this dataset.
 See the dataset sites for download:
 
 - PASCAL VOC 2012: http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
-- SBD: see [homepage](https://9bc0b5eb4c18f1fc9a28517a91305702c68a10ae.googledrive.com/host/0ByUkob0WA1-NQi1sNlg4WkJQbTg/codes/SBD/download.html) or [direct download](http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/semantic_contours/benchmark.tgz)
+- SBD: see [homepage](http://home.bharathh.info/home/sbd) or [direct download](http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/semantic_contours/benchmark.tgz)
