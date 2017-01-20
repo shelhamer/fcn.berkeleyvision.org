@@ -5,8 +5,11 @@ import numpy as np
 import os
 import sys
 
-import setproctitle
-setproctitle.setproctitle(os.path.basename(os.getcwd()))
+try:
+    import setproctitle
+    setproctitle.setproctitle(os.path.basename(os.getcwd()))
+except:
+    pass
 
 color_proto = '../nyud-rgb-32s/trainval.prototxt'
 color_weights = '../nyud-rgb-32s/nyud-rgb-32s-28k.caffemodel'

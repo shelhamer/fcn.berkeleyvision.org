@@ -5,8 +5,11 @@ import numpy as np
 import os
 import sys
 
-import setproctitle
-setproctitle.setproctitle(os.path.basename(os.getcwd()))
+try:
+    import setproctitle
+    setproctitle.setproctitle(os.path.basename(os.getcwd()))
+except:
+    pass
 
 weights = '../siftflow-fcn16s/siftflow-fcn16s.caffemodel'
 

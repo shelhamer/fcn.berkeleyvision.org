@@ -5,8 +5,11 @@ import numpy as np
 import os
 import sys
 
-import setproctitle
-setproctitle.setproctitle(os.path.basename(os.getcwd()))
+try:
+    import setproctitle
+    setproctitle.setproctitle(os.path.basename(os.getcwd()))
+except:
+    pass
 
 weights = '../pascalcontext-fcn32s/pascalcontext-fcn32s.caffemodel'
 
