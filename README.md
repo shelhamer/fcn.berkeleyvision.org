@@ -15,6 +15,8 @@ This is the reference implementation of the models and code for the fully convol
 **Note that this is a work in progress and the final, reference version is coming soon.**
 Please ask Caffe and FCN usage questions on the [caffe-users mailing list](https://groups.google.com/forum/#!forum/caffe-users).
 
+Refer to [these slides](https://docs.google.com/presentation/d/10XodYojlW-1iurpUsMoAZknQMS36p7lVIfFZ-Z7V_aY/edit?usp=sharing) for a summary of the approach.
+
 These models are compatible with `BVLC/caffe:master`.
 Compatibility has held since `master@8c66fa5` with the merge of PRs #3613 and #3570.
 The code and models here are available under the same license as Caffe (BSD-2) and the Caffe-bundled models (that is, unrestricted use; see the [BVLC model license](http://caffe.berkeleyvision.org/model_zoo.html#bvlc-model-license)).
