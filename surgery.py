@@ -40,8 +40,8 @@ def upsample_filt(size):
     else:
         center = factor - 0.5
     og = np.ogrid[:size, :size]
-    return (1 - abs(og[0] - center) / factor) * \
-           (1 - abs(og[1] - center) / factor)
+    return (1 - abs(og[0] - center) / float(factor)) * \
+           (1 - abs(og[1] - center) / float(factor))
 
 def interp(net, layers):
     """
