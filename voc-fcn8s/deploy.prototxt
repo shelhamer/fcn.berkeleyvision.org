@@ -606,6 +606,6 @@ layer {
   top: "score"
   crop_param {
     axis: 2
-    offset: 31
+    offset: 34
   }
 }
