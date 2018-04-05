@@ -10,6 +10,8 @@ CVPR 2013
 at http://www.cs.berkeley.edu/~sgupta/pdf/GuptaArbelaezMalikCVPR13.pdf .
 To reproduce the results of our paper, you must make use of the data from Gupta et al. at http://people.eecs.berkeley.edu/~sgupta/cvpr13/data.tgz .
 
+Download the data in our same format from http://dl.caffe.berkeleyvision.org/nyud.tar.gz
+
 Refer to `classes.txt` for the listing of classes in model output order.
 Refer to `../nyud_layers.py` for the Python data layer for this dataset.
 
