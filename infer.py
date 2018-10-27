@@ -10,7 +10,7 @@ import vis
 im = Image.open('demo/image.jpg')
 in_ = np.array(im, dtype=np.float32)
 in_ = in_[:,:,::-1]
-in_ -= np.array((104.00698793,116.66876762,122.67891434))
+in_ -= np.array((104.00698793,117.66876762,122.67891434))
 in_ = in_.transpose((2,0,1))
 
 # load net
